@@ -1,8 +1,8 @@
 from Tkinter import *
-tk = Tk()
-canvas = Canvas(tk, width = 500, height = 500)
+root= Tk()
+canvas = Canvas(root, width = 1000, height = 1000)
 canvas.pack()
-canvas.create_line(0, 0, 500, 500)
+canvas.create_line(0, 0, 1000, 1000)
 
 import random
 def random_rectangle(width, height):
