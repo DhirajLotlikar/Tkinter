@@ -1,6 +1,6 @@
 from Tkinter import *
-tk = Tk()
-canvas = Canvas(tk, width = 400, height = 400)
+root = Tk()
+canvas = Canvas(root, width = 1000, height = 1000)
 canvas.pack()
 
 import random
@@ -13,7 +13,6 @@ def random_rectangle(width, height, fill_color):
 
 color = ['green', 'red', 'blue', 'orange', 'yellow', 'pink', 'purple', 'violet', 'magenta', 'cyan']    
 for x in range(0, 100):
-	  random_rectangle(400, 400, color[x%10])
+	  random_rectangle(1000, 1000, color[x%10])
 	  
-a = raw_input("come on:")
-print(a)
+root.mainloop()
